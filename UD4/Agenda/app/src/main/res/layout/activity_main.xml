@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE: "
+        android:textSize="18dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edittextNombre" />
+
+    <EditText
+        android:id="@+id/edittextNombre"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/style_border_edittext"
+        android:text=""
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEFONO: "
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextTelefono"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombre"
+        app:layout_constraintTop_toTopOf="@+id/edittextTelefono" />
+
+    <EditText
+        android:id="@+id/edittextTelefono"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/style_border_edittext"
+        android:text=""
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/edittextNombre"
+
+        app:layout_constraintTop_toBottomOf="@+id/edittextNombre" />
+
+    <TextView
+        android:id="@+id/textViewArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE ARCHIVO: "
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextArchivo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefono"
+        app:layout_constraintTop_toTopOf="@+id/edittextArchivo" />
+
+    <EditText
+        android:id="@+id/edittextArchivo"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/style_border_edittext"
+        android:text=""
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/edittextTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/edittextTelefono" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="GUARDAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextArchivo" />
+
+    <TextView
+        android:id="@+id/textViewConsulta"
+        android:layout_width="340dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style_border_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGuardar" />
+
+    <Button
+        android:id="@+id/buttonConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CONSULTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConsulta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
